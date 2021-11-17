@@ -5,4 +5,4 @@ This is survey form page for a restuarant outlet.
 
 Enjoy!
 
-Url: 
+Url: https://chefk2025.github.io/Survey-Form-Page-2021/
