@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body> 
+		<div class="container">	
+			<header>
+			<h1 id="title">Kushikatsu Don Store Review</h1>
+			<p id="description">This is a survey to evaluate individual store quality and service</p>
+			</header>
+
+			<form id="survey-form">
+				<div class="form-family">
+					<label for="name" id="name-label"><b>Name</b></label>
+					<input type="text" id="name" class="form-placeholder" placeholder="Enter your name" required/>
+				</div>
+				<div class="form-family">
+					<label for="email" id="email-label"><b>Email</b></label>
+					<input type="email" id="email" class="form-placeholder"placeholder="Enter email address" required/>
+				</div>
+				<div class="form-family">
+					<label for="date" id="date-label"><b>Date of Visit</b></label>
+					<input type="date" id="date" class="form-placeholder" placeholder="DD-MM-YYYY" min="01-01-2021" max="31-12-2022" required/>
+				</div>
+				<div class="form-family">
+					<label for="age" id="number-label"><b>Age</b></label>
+					<input type="number" id="number" class="form-placeholder" placeholder="Enter an Age" min="0" max="100" value="Age" required/>
+				</div>
+				<div class="form-family">
+					<label for="gender" id="gender"><b>Gender</b></label><br>
+						<span>
+							<input type="radio" id="male" name="gender" value="male" checked>
+							<label for="gender-male">Male</label>
+						</span>
+						<span>
+							<input type="radio" id="female" name="gender" value="female">
+							<label for="gender-female">Female</label><br>
+						</span>	
+					</div>
+				<div class="form-family">
+					<label for="outlet-location"><b>Which outlet have you visited today?</b></label><br>
+						<select class="form-placeholder" id="dropdown" name="outlet-location">
+							<option value="location">Select a location</option>
+							<option value="Bishan">Bishan</option>
+							<option value="Vivocity">Vivocity</option>
+							<option value="Bugis">Bugis</option>
+							<option value="Changi">Changi</option>
+						</select>
+				</div>
+				<div class="form-family">
+					<label for="food"><b>Food Quailty</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="food"><b>Portion Size</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="food"><b>Food Appearance</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="service"><b>Ease of Ordering</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="service"><b>Service Delivery</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="service"><b>Store Cleanliness</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="service"><b>Takeaway Option</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="service"><b>Overall Value</b></label><br>
+					<input type="checkbox" id="rate1" name="excellent" value="excellent">
+					<label for="excellent">Excellent</label>
+					<input type="checkbox" id="rate2" name="good" value="good">
+					<label for="excellent">Good</label>
+					<input type="checkbox" id="rate3" name="fair" value="fair">
+					<label for="excellent">Fair</label>
+					<input type="checkbox" id="rate4" name="poor" value="poor">
+					<label for="excellent">Poor</label>
+				</div>
+				<div class="form-family">
+					<label for="marketing"><b>Where do you hear from us?</b></label>
+					<br>
+					<input type="checkbox" id="market1" name="market1" value="people">
+					<label for="people">Word of Mouth</label>
+					<input type="checkbox" id="market2" name="market2" value="leaflet">
+					<label for="leaflet">Leaflet</label>
+					<input type="checkbox" id="market3" name="market3" value="instagram">
+					<label for="instagram">Instagram</label>
+					<input type="checkbox" id="market4" name="market4" value="facebook">
+					<label for="facebook">Facebook</label>
+				</div>
+				<div class="form-family">
+					<p id="comments"><b>Comments or Sugguestions?</b></p>
+					<textarea class="form-placeholder" rows="5">Enter your comments</textarea>
+				</div>
+				<div class="form-family">
+					<input type="submit" id="submit" value="SUBMIT">
+				</div>
+			</form>
+			<footer>
+				<p>Created by Alex Kong &copy 2021</p>
+			</footer>
+		</div>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>

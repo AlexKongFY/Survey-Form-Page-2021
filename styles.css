@@ -1,0 +1,98 @@
+body{
+    margin-inline: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    background-image: url(images/Kushikatsu.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.65;
+}
+
+
+header body footer {
+    font-family:'Mochiy Pop One', sans-serif;
+    font-size: 1.3125rem
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: #01016e;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    color: #01016e;
+    position: relative;
+}
+
+#title {
+    text-transform: uppercase;
+}
+
+#description {
+    font-style: italic;
+}
+
+
+#survey-form {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid #2f4f4f;
+    box-shadow: 1px 1px 1px 1px #d3d3d3;
+    opacity: 0.8;
+}
+
+.form-family {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.25rem;
+}
+
+.form-placeholder {
+    width:100%;
+}
+
+#name-label #email-label #date-label #number-label #comments{
+    display:flex;
+    align-items: center;
+}
+
+#submit {
+    width:100%;
+    background-color: #c9ff04;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: auto
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        margin: auto;
+        max-width: 540px;
+    }
+}
